@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0B2434;
+}
+
+main.App {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  height: 600px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px rgb(255 255 255 / 70%);
+}
+
+.text h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.text p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.dices-container {
+  margin: 60px 0 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 30px;
+}
+.dices-container .dice {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 0 rgb(0 0 0 / 30%);
+  cursor: pointer;
+  user-select: none;
+}
+
+.roll {
+  background-color: #5035FF;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 0 rgb(0 0 0 / 30%);
+}
+
+.roll:active, 
+.dices-container .dice:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
